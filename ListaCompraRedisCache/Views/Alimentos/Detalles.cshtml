@@ -1,0 +1,65 @@
+﻿@model ListaCompraRedisCache.Models.Alimentos
+
+@{
+    ViewBag.Title = "Detalles";
+}
+
+<h2>Detalles del alimento</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdAlimento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdAlimento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Precio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Precio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Imagen)
+        </dt>
+
+        <dd>
+            <div style="float:left;padding-right:10px">
+                <img src="@Model.Imagen" style="width:150px;height:150px" />
+            </div>
+        </dd>
+    </dl>
+</div>
+
+<h2 style="color:red">@ViewBag.Mensaje</h2>
+
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
+<p>
+    @Html.ActionLink("Favorito", "MisFavoritos",
+        new { idalimento = Model.IdAlimento }, null)
+</p>
+

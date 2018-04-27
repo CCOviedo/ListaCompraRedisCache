@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ListaCompraRedisCache.Models.Alimentos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Mostrar favoritos", "ProductosFavoritos", "Alimentos") |
+    @Html.ActionLink("Limpiar favoritos", "LimpiarFavoritos", "Alimentos")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdAlimento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Precio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Imagen)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdAlimento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Precio)
+        </td>
+        <td>
+            <div style="float:left;padding-right:10px">
+                <img src="@item.Imagen" style="width:150px;height:150px" />
+            </div>
+        </td>
+        <td>|
+            @Html.ActionLink("Details", "Detalles"
+           , new {idalimento=item.IdAlimento}) |
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<comida>
+  <producto>
+    <idalimento>1</idalimento>
+    <nombre>Choped</nombre>
+    <descripcion>Choped fresco.</descripcion>
+    <precio>7</precio>
+    <imagen>https://st.depositphotos.com/1022214/2224/i/950/depositphotos_22243975-stock-photo-choped-a-spanish-cold-cut.jpg</imagen>
+  </producto>
+  <producto>
+    <idalimento>2</idalimento>
+    <nombre>Alcachofa</nombre>
+    <descripcion>Alcachofa rica en alcachofa.</descripcion>
+    <precio>20</precio>
+    <imagen>https://www.frutadelasarga.com/server/Portal_0008706/img/products/alcachofa-de-la-vega-baja-de-alicante_1222706.jpg</imagen>
+  </producto>
+  <producto>
+    <idalimento>3</idalimento>
+    <nombre>Pizza</nombre>
+    <descripcion>Ambrosía de los dioses (sin piña)</descripcion>
+    <precio>45</precio>
+    <imagen>http://i.dailymail.co.uk/i/pix/2018/02/02/18/48D3379500000578-5345305-image-a-16_1517595669475.jpg</imagen>
+  </producto>
+  <producto>
+    <idalimento>4</idalimento>
+    <nombre>Tomates</nombre>
+    <descripcion>Pues unos tomates.</descripcion>
+    <precio>40</precio>
+    <imagen>https://www.frutadelasarga.com/server/Portal_0008706/img/products/tomate-daniela_2967513.jpg</imagen>
+  </producto>
+  <producto>
+    <idalimento>5</idalimento>
+    <nombre>Huevos</nombre>
+    <descripcion>Un buen par de huevos</descripcion>
+    <precio>70</precio>
+    <imagen>http://static1.ideal.es/www/multimedia/201804/09/media/cortadas/huevos-lidl-kaAC-U501560332927NhD-624x385@Ideal.jpg</imagen>
+  </producto>
+  <producto>
+    <idalimento>6</idalimento>
+    <nombre>Potatos</nombre>
+    <descripcion>POTA-TO</descripcion>
+    <precio>65</precio>
+    <imagen>https://ep01.epimg.net/elcomidista/imagenes/2017/02/22/articulo/1487804099_363696_1487804800_sumario_normal.jpg</imagen>
+  </producto>
+  <producto>
+    <idalimento>7</idalimento>
+    <nombre>Leche</nombre>
+    <descripcion>Leche asturiana sin copyright</descripcion>
+    <precio>90</precio>
+    <imagen>https://s1.dia.es/medias/he0/hb5/9043223117854.jpg</imagen>
+  </producto>
+  <producto>
+    <idalimento>9</idalimento>
+    <nombre>Carne</nombre>
+    <descripcion>Que tiemblen los herbívoros</descripcion>
+    <precio>15</precio>
+    <imagen>http://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2016/01/ablandarcarne.jpg</imagen>
+  </producto>
+  <producto>
+    <idalimento>10</idalimento>
+    <nombre>Pescado</nombre>
+    <descripcion>Fresco y sin tres ojos.</descripcion>
+    <precio>40</precio>
+    <imagen>https://i.blogs.es/6ffcdc/pescado/450_1000.jpg</imagen>
+  </producto>  
+  </comida>

@@ -1,0 +1,41 @@
+﻿@model IEnumerable<ListaCompraRedisCache.Models.Alimentos>
+
+@{
+    ViewBag.Title = "ProductosFavoritos";
+}
+
+<h2>ProductosFavoritos</h2>
+
+<p>
+    @Html.ActionLink("Volver a Index", "Index")
+</p>
+<h2 style="color:blueviolet">
+    @ViewBag.Mensaje
+</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Precio)
+        </th>
+        <th></th>
+    </tr>
+
+@if (Model != null)
+{
+    foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Precio)
+            </td>
+        </tr>
+    }
+}
+
+</table>
